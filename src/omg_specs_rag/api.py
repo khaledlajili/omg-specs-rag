@@ -174,3 +174,8 @@ def _log(question: str, outcome: str):
             conn.commit()
     except Exception:
         pass
+
+@app.api_route("/", methods=["GET", "HEAD"])
+@app.api_route("/health", methods=["GET", "HEAD"])
+def health():
+    return {"status": "ok"}
