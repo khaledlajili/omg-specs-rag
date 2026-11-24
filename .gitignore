@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+.deps/
+
+# OMG PDFs and parsed data (never commit)
+data/pdfs/*.pdf
+data/parsed/*
+!data/pdfs/.gitkeep
+!data/parsed/.gitkeep
+
+# Env and secrets
+.env
+.env.*
+.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+node_modules/

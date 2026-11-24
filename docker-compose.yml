@@ -1,0 +1,21 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: omg-rag-db
+    environment:
+      POSTGRES_USER: omg
+      POSTGRES_PASSWORD: omg
+      POSTGRES_DB: omg_rag
+    ports:
+      - "5433:5432"
+    volumes:
+      - omg_pgdata:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U omg -d omg_rag"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  omg_pgdata:

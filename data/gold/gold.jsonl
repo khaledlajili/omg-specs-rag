@@ -1,0 +1,30 @@
+{"id": "xmi-001", "question": "What is required for XMI Schema Compliance?", "acronym": "XMI", "version": "2.5.1", "answerable": true, "expected_clauses": ["2.2.1"], "notes": "Single clause, normative"}
+{"id": "xmi-002", "question": "How does XMI 2.5.1 differ from 2.4.2 in schema production rules?", "acronym": "XMI", "version": null, "answerable": true, "expected_clauses": [], "notes": "Cross-version, must label both"}
+{"id": "cmmn-001", "question": "What is a Case File Item in CMMN?", "acronym": "CMMN", "version": "1.1", "answerable": true, "expected_clauses": ["5.3.2"], "notes": "Definition"}
+{"id": "mof-001", "question": "What is the MOF Extent?", "acronym": "MOF", "version": "2.5.1", "answerable": true, "expected_clauses": ["10.2"], "notes": "Definition"}
+{"id": "ocl-001", "question": "What does OCL say about null values?", "acronym": "OCL", "version": "2.4", "answerable": true, "expected_clauses": [], "notes": "May span multiple clauses"}
+{"id": "unans-001", "question": "What is the capital of France?", "acronym": null, "version": null, "answerable": false, "expected_clauses": [], "notes": "Out of corpus"}
+{"id": "unans-002", "question": "How do I configure Eclipse for UML modeling?", "acronym": null, "version": null, "answerable": false, "expected_clauses": [], "notes": "Tooling, not in specs"}
+{"id": "xmi-003", "question": "What attributes are used for element identification in XMI?", "acronym": "XMI", "version": "2.5.1", "answerable": true, "expected_clauses": ["7.6.1"], "notes": "Attribute list"}
+{"id": "bpmn-001", "question": "What are the conformance levels for BPMN process modeling?", "acronym": "BPMN", "version": "2.0.2", "answerable": true, "expected_clauses": ["2.2"], "notes": "Multi-subclause"}
+{"id": "dmn-001", "question": "What is a Decision Requirements Diagram in DMN?", "acronym": "DMN", "version": "1.6", "answerable": true, "expected_clauses": ["6.2"], "notes": "Notation"}
+{"id": "sysml-001", "question": "How does SysML extend UML for systems engineering?", "acronym": "SysML", "version": "1.7", "answerable": true, "expected_clauses": [], "notes": "High-level"}
+{"id": "fuml-001", "question": "What is the purpose of fUML?", "acronym": "FUML", "version": "1.5", "answerable": true, "expected_clauses": ["1"], "notes": "Scope"}
+{"id": "ocl-002", "question": "What is the difference between OclAny and OclVoid?", "acronym": "OCL", "version": "2.4", "answerable": true, "expected_clauses": [], "notes": "Type system"}
+{"id": "unans-003", "question": "Which UML tool is best for enterprise architecture?", "acronym": null, "version": null, "answerable": false, "expected_clauses": [], "notes": "Opinion / tooling"}
+{"id": "version-001", "question": "Show the XMI 2.4.2 definition of Extension", "acronym": "XMI", "version": "2.4.2", "answerable": true, "expected_clauses": ["7.5.4"], "notes": "Explicit older version"}
+{"id": "table-001", "question": "List the attributes of the Case class in CMMN", "acronym": "CMMN", "version": "1.1", "answerable": true, "expected_clauses": ["5.2.1"], "notes": "Table-heavy"}
+{"id": "mof-002", "question": "What operations does the MOF Element class define?", "acronym": "MOF", "version": "2.5.1", "answerable": true, "expected_clauses": ["9.2.2"], "notes": "Operations"}
+{"id": "xmi-004", "type": "factual", "question": "What is the purpose of the XMI Extension element?", "acronym": "XMI", "version": "2.5.1", "answerable": true, "expected_clauses": ["7.5.4"], "notes": "Element definition"}
+{"id": "bpmn-002", "type": "table", "question": "What are the attributes of a BPMN Task?", "acronym": "BPMN", "version": "2.0.2", "answerable": true, "expected_clauses": [], "notes": "Table"}
+{"id": "dmn-002", "type": "normative", "question": "What shall a DMN decision service expose?", "acronym": "DMN", "version": "1.6", "answerable": true, "expected_clauses": [], "notes": "Shall language"}
+{"id": "sysml-002", "type": "cross_spec", "question": "How does SysML reuse UML metaclasses?", "acronym": "SysML", "version": "1.7", "answerable": true, "expected_clauses": [], "notes": "Cross-spec"}
+{"id": "ocl-003", "type": "factual", "question": "What is OclAny in OCL?", "acronym": "OCL", "version": "2.4", "answerable": true, "expected_clauses": [], "notes": "Type"}
+{"id": "fuml-002", "type": "factual", "question": "What is the fUML execution model based on?", "acronym": "FUML", "version": "1.5", "answerable": true, "expected_clauses": [], "notes": "Foundation"}
+{"id": "mof-003", "type": "factual", "question": "What is the MOF Reflection package?", "acronym": "MOF", "version": "2.5.1", "answerable": true, "expected_clauses": ["9"], "notes": "Package"}
+{"id": "cmmn-002", "type": "normative", "question": "What constraints does CMMN place on a CaseFileItem?", "acronym": "CMMN", "version": "1.1", "answerable": true, "expected_clauses": ["5.3.2"], "notes": "Constraints"}
+{"id": "version-002", "type": "version_sensitive", "question": "What does the XMI 2.5 beta say about schema compliance?", "acronym": "XMI", "version": "2.5", "answerable": true, "expected_clauses": ["2.2.1"], "notes": "Beta version"}
+{"id": "unans-004", "type": "unanswerable", "question": "What does UML 3.0 say about profiles?", "acronym": null, "version": null, "answerable": false, "expected_clauses": [], "notes": "Nonexistent version"}
+{"id": "unans-005", "type": "unanswerable", "question": "How should I design my enterprise architecture?", "acronym": null, "version": null, "answerable": false, "expected_clauses": [], "notes": "Opinion"}
+{"id": "table-002", "type": "table", "question": "List the attributes of the MOF Element class", "acronym": "MOF", "version": "2.5.1", "answerable": true, "expected_clauses": ["9.2.1"], "notes": "Table"}
+{"id": "bpmn-003", "type": "factual", "question": "What is a BPMN Gateway?", "acronym": "BPMN", "version": "2.0.2", "answerable": true, "expected_clauses": [], "notes": "Element"}

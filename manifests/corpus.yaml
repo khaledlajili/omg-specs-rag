@@ -1,0 +1,121 @@
+# OMG Specs RAG - Download Manifest
+# PDFs themselves are git-ignored; only this manifest is committed.
+# Confirm latest versions on https://www.omg.org/spec/<ACRONYM>/
+
+documents:
+  - acronym: UML
+    version: "2.5.1"
+    status: formal
+    title: "OMG Unified Modeling Language (OMG UML)"
+    pdf_url: "https://www.omg.org/spec/UML/2.5.1/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Primary large document; dense constraints"
+
+  - acronym: UML
+    version: "2.5"
+    status: formal
+    title: "OMG Unified Modeling Language (OMG UML)"
+    pdf_url: "https://www.omg.org/spec/UML/2.5/PDF"
+    superseded_by: "2.5.1"
+    is_latest_formal: false
+    notes: "Older formal for version-difference questions"
+
+  - acronym: MOF
+    version: "2.5.1"
+    status: formal
+    title: "OMG Meta Object Facility (MOF) Core"
+    pdf_url: "https://www.omg.org/spec/MOF/2.5.1/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Foundation shared with UML and XMI"
+
+  - acronym: XMI
+    version: "2.5.1"
+    status: formal
+    title: "XML Metadata Interchange (XMI)"
+    pdf_url: "https://www.omg.org/spec/XMI/2.5.1/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Current formal"
+
+  - acronym: XMI
+    version: "2.4.2"
+    status: formal
+    title: "XML Metadata Interchange (XMI)"
+    pdf_url: "https://www.omg.org/spec/XMI/2.4.2/PDF"
+    superseded_by: "2.5.1"
+    is_latest_formal: false
+    notes: "Older formal for version comparison"
+
+  - acronym: XMI
+    version: "2.5"
+    status: beta
+    title: "XML Metadata Interchange (XMI)"
+    pdf_url: "https://www.omg.org/spec/XMI/2.5/Beta1/PDF"
+    superseded_by: "2.5.1"
+    is_latest_formal: false
+    notes: "Superseded beta – ideal for outdated-version tests"
+
+  - acronym: OCL
+    version: "2.4"
+    status: formal
+    title: "Object Constraint Language"
+    pdf_url: "https://www.omg.org/spec/OCL/2.4/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Precise definitions and grammar"
+
+  - acronym: SysML
+    version: "1.7"
+    status: formal
+    title: "OMG Systems Modeling Language (OMG SysML)"
+    pdf_url: "https://www.omg.org/spec/SysML/1.7/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Extends UML; cross-spec cases. Confirm latest 1.x on catalog."
+
+  - acronym: BPMN
+    version: "2.0.2"
+    status: formal
+    title: "Business Process Model and Notation"
+    pdf_url: "https://www.omg.org/spec/BPMN/2.0.2/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Many tables and element definitions"
+
+  - acronym: DMN
+    version: "1.6"
+    status: formal
+    title: "Decision Model and Notation"
+    pdf_url: "https://www.omg.org/spec/DMN/1.6/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Confirm latest formal on catalog"
+
+  - acronym: DMN
+    version: "1.5"
+    status: beta
+    title: "Decision Model and Notation"
+    pdf_url: "https://www.omg.org/spec/DMN/1.5/Beta1/PDF"
+    superseded_by: "1.6"
+    is_latest_formal: false
+    notes: "Beta vs formal case – confirm exact beta URL on catalog"
+
+  - acronym: FUML
+    version: "1.5"
+    status: formal
+    title: "Semantics of a Foundational Subset for Executable UML Models (fUML)"
+    pdf_url: "https://www.omg.org/spec/FUML/1.5/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Confirm latest formal"
+
+  - acronym: CMMN
+    version: "1.1"
+    status: formal
+    title: "Case Management Model and Notation"
+    pdf_url: "https://www.omg.org/spec/CMMN/1.1/PDF"
+    superseded_by: null
+    is_latest_formal: true
+    notes: "Complementary to BPMN/DMN (triple crown). Formal Dec 2016."

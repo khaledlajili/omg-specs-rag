@@ -1,0 +1,93 @@
+{
+  "UML:2.5.1:formal": {
+    "file": "UML_2_5_1_formal.pdf",
+    "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+    "sha256": "416b57e1933780eb48bd60fe513e031da220c28a521bdd334a366bebc78a463e",
+    "size_bytes": 18069510,
+    "page_count_est": 0
+  },
+  "MOF:2.5.1:formal": {
+    "file": "MOF_2_5_1_formal.pdf",
+    "url": "https://www.omg.org/spec/MOF/2.5.1/PDF",
+    "sha256": "9a4442a6a1297615957a367181db0a1cf926b90daf27ca9106fe435d076a008f",
+    "size_bytes": 1574521,
+    "page_count_est": 78
+  },
+  "XMI:2.5.1:formal": {
+    "file": "XMI_2_5_1_formal.pdf",
+    "url": "https://www.omg.org/spec/XMI/2.5.1/PDF",
+    "sha256": "2bf97c670f128affc9ed5dc202ef748101afd0eee8ee662e8763da6092c80c1b",
+    "size_bytes": 461759,
+    "page_count_est": 122
+  },
+  "XMI:2.4.2:formal": {
+    "file": "XMI_2_4_2_formal.pdf",
+    "url": "https://www.omg.org/spec/XMI/2.4.2/PDF",
+    "sha256": "cf7ccac77c36978ca1ed8cf1e786e642a63fbdef1333cd3780afd8795c1af1a3",
+    "size_bytes": 995583,
+    "page_count_est": 112
+  },
+  "XMI:2.5:beta": {
+    "file": "XMI_2_5_beta.pdf",
+    "url": "https://www.omg.org/spec/XMI/2.5/Beta1/PDF",
+    "sha256": "284be16a8103e575027e736af44cf1346f96a7abd669b6d37157b71ddc576a6e",
+    "size_bytes": 455691,
+    "page_count_est": 112
+  },
+  "OCL:2.4:formal": {
+    "file": "OCL_2_4_formal.pdf",
+    "url": "https://www.omg.org/spec/OCL/2.4/PDF",
+    "sha256": "b97e46a946418ba3c8db6f33def013e4d8a56ac500cb1bed055fed660977a7ef",
+    "size_bytes": 1880074,
+    "page_count_est": 262
+  },
+  "SysML:1.7:formal": {
+    "file": "SysML_1_7_formal.pdf",
+    "url": "https://www.omg.org/spec/SysML/1.7/PDF",
+    "sha256": "44181b4d225debc8caa9bac8cd565eae9b4ba4de7852dbb5ff61d17cbb093c3f",
+    "size_bytes": 14049535,
+    "page_count_est": 263
+  },
+  "BPMN:2.0.2:formal": {
+    "file": "BPMN_2_0_2_formal.pdf",
+    "url": "https://www.omg.org/spec/BPMN/2.0.2/PDF",
+    "sha256": "d3d9258a70bf808c11ac52becea4ce645540a8b881117535f60a56fbf13e22f2",
+    "size_bytes": 7296515,
+    "page_count_est": 534
+  },
+  "DMN:1.6:formal": {
+    "file": "DMN_1_6_formal.pdf",
+    "url": "https://www.omg.org/spec/DMN/1.6/PDF",
+    "sha256": "995743c39d3efee13375d837f3ddff815b72bba0534343a7c9186fb0298c00d0",
+    "size_bytes": 15542071,
+    "page_count_est": 265
+  },
+  "DMN:1.5:beta": {
+    "file": "DMN_1_5_beta.pdf",
+    "url": "https://www.omg.org/spec/DMN/1.5/Beta1/PDF",
+    "sha256": "400c00a5b2ae624f7f8e6faa037142909db33b69dd9048f05f32870f0071a6cd",
+    "size_bytes": 10220138,
+    "page_count_est": 0
+  },
+  "FUML:1.5:formal": {
+    "file": "FUML_1_5_formal.pdf",
+    "url": "https://www.omg.org/spec/FUML/1.5/PDF",
+    "sha256": "d90cf98fcd7651794f8339c42801106c0235a54b8d81907a06005e627eff9c5f",
+    "size_bytes": 8765670,
+    "page_count_est": 430
+  },
+  "CMMN:1.1:formal": {
+    "file": "CMMN_1_1_formal.pdf",
+    "url": "https://www.omg.org/spec/CMMN/1.1/PDF",
+    "sha256": "7e8c07f50d96ffbe484d40eb6505d394f1d5282147171565f6c6e80a2eacdd68",
+    "size_bytes": 2744005,
+    "page_count_est": 144
+  },
+  "UML:2.5:formal": {
+    "file": "UML_2_5_formal.pdf",
+    "url": "https://www.omg.org/spec/UML/2.5/PDF",
+    "sha256": "830dc6c057c14834bd2409da5c520db8a6c4e7483bb217cb1af07f66755c642c",
+    "size_bytes": 6952682,
+    "page_count_est": 794
+  }
+}
