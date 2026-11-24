@@ -10,7 +10,6 @@ from collections import defaultdict
 import psycopg
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from flashrank import Ranker, RerankRequest
 from openai import OpenAI
 from pydantic import BaseModel
 from fastembed import TextEmbedding
@@ -32,7 +31,6 @@ LLM_API_KEY = os.environ.get("LLM_API_KEY", "")
 LLM_MODEL = os.environ.get("LLM_MODEL", "nvidia/nemotron-3-super-120b-a12b:free")
 
 embed_model = None
-ranker = None
 
 
 def get_embed():
@@ -40,13 +38,6 @@ def get_embed():
     if embed_model is None:
         embed_model = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
     return embed_model
-
-
-def get_ranker():
-    global ranker
-    if ranker is None:
-        ranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2", cache_dir="/tmp/flashrank")
-    return ranker
 
 
 def normalize_query(q: str) -> str:
@@ -87,7 +78,7 @@ def retrieve(query: str):
         """, (query, query))
         lex = [r[0] for r in cur.fetchall()]
 
-        fused = rrf_fuse([dense, lex])[:10]
+        fused = rrf_fuse([dense, lex])[:6]
         if not fused:
             return []
         ids = [c for c, _ in fused]
@@ -98,11 +89,9 @@ def retrieve(query: str):
         """, (ids,))
         rows = {r[0]: r for r in cur.fetchall()}
 
-        passages = [{"id": str(cid), "text": rows[cid][3]} for cid in ids]
-        ranked = get_ranker().rerank(RerankRequest(query=query, passages=passages))
         sources = []
-        for i, item in enumerate(ranked[:6], 1):
-            r = rows[int(item["id"])]
+        for i, cid in enumerate(ids, 1):
+            r = rows[cid]
             sources.append({
                 "id": i,
                 "header": r[1],
