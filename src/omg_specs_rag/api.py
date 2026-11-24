@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from flashrank import Ranker, RerankRequest
 from openai import OpenAI
 from pydantic import BaseModel
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 app = FastAPI(title="OMG Specs RAG")
 origins = os.environ.get("CORS_ORIGINS", "http://localhost:5173").split(",")
@@ -38,7 +38,7 @@ ranker = None
 def get_embed():
     global embed_model
     if embed_model is None:
-        embed_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+        embed_model = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")
     return embed_model
 
 
@@ -66,7 +66,7 @@ def rrf_fuse(rank_lists, k=60):
 
 def retrieve(query: str):
     model = get_embed()
-    qvec = list(map(float, model.encode(query, normalize_embeddings=True)))
+    qvec = [float(x) for x in next(model.embed([query]))]
     with psycopg.connect(DATABASE_URL) as conn:
         cur = conn.cursor()
         cur.execute("""
